@@ -11,4 +11,4 @@ class FilmesViewSet(viewsets.ModelViewSet):
     queryset = Filmes.objects.all()
     serializer_class = FilmesSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['titulo', 'genero__nome', 'ano']
+    filterset_fields = ['titulo', 'generos', 'ano_lancamento']
